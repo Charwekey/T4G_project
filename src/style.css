@@ -1,0 +1,354 @@
+ /* Homepage starts*/
+
+
+
+ .container-nav img{
+    /* display: flex;  */
+       /* background-image: url(../images/pancakes.jpg); */
+       background-size: cover;
+       background-repeat: no-repeat;
+       border: 5px solid rgb(235, 89, 120);
+       width: 100%;
+      height: 100vh;
+      border-radius: 30px;
+
+ }
+ #home{
+   color: yellow;
+   float: right;
+   size: 24px;
+   margin: -100px 40px; 
+   top: 60px; 
+ position: relative; 
+ }
+
+ .header{
+   display: flex;
+    flex-direction: row; 
+ position: relative;
+   top: 70px;
+   justify-content: space-between;
+    
+ }  
+
+ .navigation{
+   display: flex;
+   flex-direction: row;
+   top: 60px; 
+   position: relative;
+   float: right;
+   margin-top: -100px; 
+
+ }   
+ 
+ .sign{
+   /* border: 2px solid white; */
+   /* box-shadow: 0 2px 4px rgb(253, 252, 252); */
+   background-color: transparent;
+   color: rgb(252, 249, 249);
+   border-radius: 10px;
+   padding: 5px;
+   margin-right: 20px;
+   cursor: pointer;
+   border: 1px solid rgb(176, 190, 122);
+ }
+ 
+   /* box-shadow: 0 2px 4px black; */
+   /* background-color: white;
+   color: black;
+   border-radius: 5px;
+   padding-bottom: 2px;
+   margin-right: 20px;
+   cursor: pointer;
+ } */
+ a{
+  text-decoration: none;
+ }
+
+ .text-box{
+    background-color: rgb(7, 7, 7);  
+  opacity: 70%;  
+   text-align: justify;
+   justify-content: center;
+   color: rgb(255, 255, 255);
+   position: absolute;
+   float: left;
+   top: 50%;
+   border-radius: 20px;
+   margin: -50px 300px 0 300px; 
+   padding: 10px;
+   animation: slideIn 5s ease-out;
+   }
+
+   @keyframes slideIn{
+    from{
+    transform: translateX(-100px);
+    opacity: 0}
+    to{
+      transform: translateX(0);
+      opacity: 1;
+    }
+   }
+
+
+ .text-box h2{
+   font-weight: bolder;
+   font-size: 50px;
+   text-align: center;
+   opacity: 100%;
+
+
+ }
+ .text-box p{
+    font-weight: 400;
+    text-align: center;
+ }
+.text-box button{
+   background-color: yellow;
+   color: black;
+   right: 310px;
+   left: 310px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   justify-content: center;
+   position: relative;
+   padding: 5px;
+}
+
+                     /* Navigation */
+.container{
+  display: flex;
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 8px rgb(68, 67, 67);
+  justify-content: space-between;
+}
+
+.container img{
+  width: 60px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+}
+ 
+.nav{
+background-color: darkorange;
+margin: 20px;
+border-radius: 5px;
+padding: 10px;
+
+}
+
+.nav a{
+  
+  margin-right: 15px;
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.active{
+  background-color: rgb(252, 251, 251);
+  color: rgb(14, 13, 13);
+  border-radius: 5px;
+  padding: 7px;
+}
+                       /* Footer */
+ .container-footer{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(44, 42, 42);
+  color: white;
+  margin-top: 20px;
+ }   
+ .footer img{
+  width: 60px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 10px;
+ }                   
+ .footer a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+ }
+.copyright{
+  text-align: center;
+  background-color: rgb(110, 104, 104);
+  color: black;
+  padding: 3px;
+}
+
+
+                       /* Menu page Starts */
+.container-search{
+  background-image: url(../images/search-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 50%;
+  height: 200px;
+}
+
+ .container-search input{
+  display: flex;
+ justify-content: center;
+  border-radius: 7px;
+  border: none;
+  opacity: 100%;
+  margin: 0 auto; 
+  /* margin-top: 10px; */
+  width: 30%;
+  padding: 7px;
+ } 
+ .container-menu{
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/pexels-n-voitkevich-8062055.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ .menu{
+  width: 30%;
+  height: auto; 
+  border: 2px solid white;
+  justify-content: space-evenly;
+  box-shadow: 0 4px 8px black;
+  margin: 20px;
+  border-radius: 30px;
+  background-color: rgb(154, 230, 154);
+
+ }
+ .menu img{
+  width: 100%;
+  height: 350px;
+  border-radius: 30px;
+ }
+ .menu h3{
+  text-align: center;
+  font-size: 30px;
+ 
+  /* background-color: rgb(61, 18, 18); */
+ }
+                    /* Menu page ends */
+
+                      /* Order page Starts*/
+   h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+   }                   
+ .container-form{
+display: flex;
+justify-content: center;
+border: 2px solid rgb(241, 239, 239);
+margin: 50px 300px;
+padding: 20px 10px 20px 10px;
+border-radius: 30px;
+box-shadow: 0 3px 13px rgb(156, 151, 151);
+
+ }      
+  
+ .order-form{
+  border: 2px solid rgb(253, 250, 250); 
+  /* padding: 100px; */
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  /* border-radius: 10px; */
+  background-color: rgb(245, 205, 157);
+  margin: 20px;
+
+ }
+
+ .order-form input{
+  width: 300%;
+   border-radius: 5px; 
+   border: none; 
+   padding: 5px;
+
+ }
+ .order-form button{
+  border-radius: 5px;
+  color: black;
+  background-color: darkorange;
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+ }
+  .order-form h3{
+  /* top: -20px; */
+ }                        
+                /* Order Page Ends */
+
+                /* reviews page starts */
+.container-reviews{
+  margin-top: 20px;
+  background-image: url(../images/background.jpg);
+  display: flex;
+   flex-wrap: wrap;
+  justify-content: space-evenly; 
+}
+
+.reviews{
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px black;
+  border-radius: 30px;
+}
+.reviews img{
+  width: 20%;
+  border-radius: 50px;
+  height: 100px;
+  margin: -40px 90px 70px -200px;
+  
+}
+.reviews p{
+  justify-content: center;
+  margin-top: -50px;
+}
+
+
+                /* reviews page Ends */
+
+
+                
+                 /* Responsiveness */
+                @media screen and (max-width :900px) and (min-width:600px)
+{
+  .text-box{
+    width: 50%;
+    height: 52%;
+    margin: -50px 150px 0 150px; 
+  }
+  .text-box h2{
+    font-size: 30px;
+  }
+  .text-box p{
+    font-size: 15px;
+    text-align: center;
+  }
+  .text-box button{
+    background-color: yellow;
+    color: black;
+    right: 100px;
+    left: 120px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+    margin-bottom: 10px;
+ }
+
+}                
