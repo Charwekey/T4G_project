@@ -424,11 +424,11 @@ justify-content: center;
 align-items: center;
 display: flex;
  margin: 50px auto; 
- animation: slideDown 5s ease forwards;
+ /* animation: slideDown 5s ease forwards; */
 
 }
 
-@keyframes slideDown {
+/* @keyframes slideDown {
   from {
     top: -300px;
   }
@@ -436,7 +436,7 @@ display: flex;
     top: 30%; 
     transform: translateY(-50%);
   }
-}
+} */
  .form-box{
   position: absolute;
   top: 0;
