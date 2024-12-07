@@ -455,12 +455,12 @@ display: flex;
 }
 .form-box .login{
   position: relative;
-  width: 70%;
+  width: 65%;
   height: 50px;
   margin: 25px 0;
 }
 .login input{
-  width: 70%;
+  width: 65%;
   height: 30px;
   background:  transparent;
   border: 1px solid #fa9a5b;
