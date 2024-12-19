@@ -153,7 +153,7 @@ padding: 0.5em;
   padding-top: 0.1em  ;
 }
                        /* Footer */
- .container-footer{
+ .containerfooter{
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(44, 42, 42);
@@ -224,7 +224,7 @@ color: black;
   background-image: url(../images/search-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 50%;
+  /* opacity: 50%; */
   height: 200px;
   padding: 20px;
 }
@@ -253,9 +253,44 @@ color: black;
   background-repeat: no-repeat;
   
  }
+
+ .explore{
+  /* border: 2px solid goldenrod; */
+  text-align: center;
+  /* background-color: #d8aa8f; */
+  /* box-shadow: 0 2px 10px goldenrod; */
+  text-shadow: 0 0  10px cyan,
+               0 0  20px cyan,
+               0 0  30px cyan,
+               0 0  40px cyan;
+  color: white;
+  
+  padding: 8px 4px 8px 8px;
+  border-radius: 50px 50px  ;
+  margin: 200px 160px;
+  font-weight: 100;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation:  bounce 2s ease-out;
+ }
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+ .explore a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+ }
  .menu{
   width: 30%;
-  height: auto; 
+  height: 450px; 
   border: 2px solid white;
   justify-content: space-evenly;
   box-shadow: 0 4px 8px black;
@@ -278,12 +313,25 @@ color: black;
 
                       /* Order page Starts*/
                       .big{
+                        position: relative;
+                        margin: 10px 0 -25px 0;
+                        padding: 1px 0;
+                      }
+                      .big::before{
+                        content: "";
+                        position: absolute;
                       background-image: url(../images/category-bg.png),url(../images/order.img.jpg) ;
                      background-blend-mode: multiply;
                      background-size: cover ,cover;
                       background-repeat: no-repeat;
-                      margin: -20px 0 -45px 0;
-                      height: 100vh;
+                      height: 100%;
+                      width: 100%;
+                      left: 0;
+                      top: 0;
+                      position: absolute;
+                      opacity: 0.5;
+ 
+                      
                      
                      
                       
@@ -302,7 +350,7 @@ h2{
 display: flex;
 justify-content: center;
 border: 1px solid #f6a576;
-margin: 50px 300px 60px 300px;
+margin: 50px 300px 80px 300px;
 padding: 10px 10px 10px 10px;
 border-radius: 30px;
 box-shadow: 0 3px 8px #fa9a5b;
@@ -353,18 +401,28 @@ box-shadow: 0 3px 8px #fa9a5b;
   flex-wrap: wrap;
   justify-content: space-evenly;
    height: 100vh;
+   position: relative;
+   margin: 10px 0 -25px 0;
              
  }
- .rabi .container{
+ .rabi .container::before{
+  content: "";
   background: url(../images/category-bg.png), url(../images/review.img.jpg);
   background-blend-mode: multiply;
   background-size: 100%;
   background-position: 20% 20% ;
    background-repeat: no-repeat;
-   height: auto;
-   margin: 10px 0 -20px 0;
+   height: 100%;
+   width: 100%;
+   
+   left: 0;
+   top: 0;
+   position: absolute;
+   opacity: 0.5;
+
+
  
- } 
+ }  
  .re{
    width: 40%;
    margin: 90px 30px 70px 30px;  
@@ -372,8 +430,9 @@ box-shadow: 0 3px 8px #fa9a5b;
    border-radius: 100px 100px 0px 100px ;
    height: 100px;
    border: 1px solid #d8aa8f;
-   box-shadow: 0 0 2px black;
+   /* box-shadow: 0 0 8px black; */
    position: relative;
+   background-color: white;
    backdrop-filter:blur(40px);
  }
   .re img{
@@ -388,9 +447,11 @@ box-shadow: 0 3px 8px #fa9a5b;
    background-repeat: no-repeat;
  }
  .re p{
-  color: #0a0a0a;
+  color: #050505;
    text-align: center;
    padding: 20px;
+   font-weight: 700;
+   font-size: 17px;
  }
 
 
@@ -778,7 +839,7 @@ width: 70%;
     cursor: pointer;
     justify-content: center;
     position: relative;
-    padding: 5px;
+    padding: 5px;   
     margin-bottom: 10px;
  } */
 
@@ -817,7 +878,7 @@ width: 70%;
   border: none;
   outline: none;
   background: transparent;
-  border-bottom: 2px solid rgb(225, 233, 117);
+  border-bottom: 2px solid rgb(251, 58, 10);
   justify-content: space-evenly;
   margin:25px;
 
@@ -832,7 +893,7 @@ border-color: #fa9a5b;
   outline: none;
   border: none;
   background: transparent;
-  border-bottom: 2px solid rgb(225, 233, 117);
+  border-bottom: 2px solid rgb(251, 58, 10);
 
 }
 textarea:focus{
@@ -843,12 +904,13 @@ textarea:focus{
   background:transparent;
   border-radius: 10px;
   margin: 20px 90px;
-  border: 2px solid rgb(231, 231, 124);
+  border: 2px solid rgb(251, 58, 10);;
 }
 
 .subbtn:focus,
 .subbtn:hover{
   background-color: #fa9a5b;
+  border: 2px solid #fa9a5b ;
 }
                                    /* Contact Us Page Ends */
 
@@ -862,8 +924,12 @@ textarea:focus{
   margin-top: 100px;
   justify-content: space-evenly;
   height: auto;
+  
 
-
+}
+.backimg
+{
+  background-color: #f4e5dd;
 }
 .bubble img{
   width: 50px;
@@ -936,6 +1002,7 @@ textarea:focus{
   position: relative;
   border-radius: 20px;
   padding: 20px;
+  backdrop-filter: 60px;
   
  
 }
@@ -974,31 +1041,40 @@ textarea:focus{
   border-radius: 10px;
   outline: none;
   border: none;
-  background-color: #fa9a5b;
+  background-color: transparent;
   cursor: pointer;
+  border: 2px solid #fa9a5b;
 }
 
 .order button:hover,
 .order button:focus
 {
-  animation: glow 1s infinite alternate;
+  background-color: #fa9a5b;
+  
   
 }
 
-@keyframes glow{
-  from{
-    box-shadow: 0 0 5px yellow;
-  }
-  to{
-    box-shadow: 0 0 30px yellow;
-  }
-}
 
 .bur{
   text-align: center;
   color: rgb(86, 38, 219);
   font-size: 50px;
+  animation: bounce 5s infinite;
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+
+
 .btn{
   padding: 10px;
   margin: 10px;
@@ -1012,18 +1088,29 @@ textarea:focus{
 
 
                                  /* Recipes Page Starts */
-                                 
-
                                  .bigger{
+                                  height: 100%;
+                                  width: 100%;
+                                  position: relative;
+                                 }
+
+                                 .bigger::before{
+                                  content: "";
                                   background: url(../images/category-bg.png) , url(../images/recipes.img.jpg);
-                                  background-blend-mode: darken;
+                                  /* background-blend-mode: darken; */
                                    background-size: 150%;
                                    background-position: 70% 70%;
                                    background-repeat: no-repeat;
-                                   margin:auto;
-                                   height: auto;
-                                 
-                                 
+                                   background-blend-mode: multiply;
+                                   height: 100%;
+                                   width: 100%;
+                                   left: 0;
+                                     top: 0;
+                                   position: absolute;
+                                   opacity: 0.8;
+                            
+                        
+  
                                  }                             
 .container-recipes{
  width: 100%;
@@ -1041,11 +1128,22 @@ textarea:focus{
   padding: 10px;
   border-radius: 100px 20px 70px 20px ;
   width: 20%;
-  height: auto;
+  height: 180px;
   border: 1px solid #d8aa8f;
   box-shadow: 0 0 2px black;
   position: relative;
   backdrop-filter:blur(100px);
+
+}
+
+.view{
+    border: 2px solid #fa9a5b;
+    box-shadow: 0 0 8px #f6a576;
+    margin: 10px;
+    padding: 10px;
+    display: none;
+    border-radius: 10px;
+    background-color: #d8aa8f;
 
 }
 
