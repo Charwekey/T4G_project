@@ -14,14 +14,12 @@ document.querySelectorAll(".menu").forEach((menu) => {
             </p>
             </em>
         `;
-    // menu.style.textAlign = 'center'; // Center the new content
-    // menu.style.margin="200px"
-    // menu.style.color = 'white'; // Set text color for visibility
+  
   });
 
   menu.addEventListener("mouseleave", () => {
-    menu.style.backgroundColor = ""; // Revert background color
-    menu.innerHTML = originalContent; // Restore original content
+    menu.style.backgroundColor = ""; 
+    menu.innerHTML = originalContent; 
   });
 });
-// export const footerContent = containerfooter.innerHTML;
+

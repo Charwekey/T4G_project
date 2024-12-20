@@ -44,15 +44,15 @@ function createPopup(index, button) {
       ).join("")}
     </select>
     <p>Total Price: <span id="total-price"></span></p>
-    <button id="confirm-order" style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Buy</button>
+    <button id="confirm-order" style="background-color: #ff884d; color: black; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;">Buy</button>
   `;
 
   popup.style.position = "absolute";
-  popup.style.backgroundColor = "white";
+  popup.style.backgroundColor = "#ffeee6";
   popup.style.padding = "20px";
   popup.style.border = "1px solid #ccc";
   popup.style.borderRadius = "10px";
-  popup.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
+  popup.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.1)";
   popup.style.zIndex = "1000"; 
 
 
