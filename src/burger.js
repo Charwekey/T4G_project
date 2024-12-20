@@ -32,7 +32,7 @@ function createPopup(index, button) {
   popup.classList.add("popup-form");
   popup.innerHTML = `
     <button id="close-popup" style="float: right; background: red; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;">X</button>
-    <h3>Order Details</h3>
+    <h3 >   Order Details</h3>
     <p>Fixed Price: <span id="fixed-price">${
       button.previousElementSibling.textContent
     }</span></p>
