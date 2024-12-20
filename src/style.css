@@ -48,7 +48,10 @@
    cursor: pointer;
    border: 1px solid rgb(176, 190, 122);
  }
- 
+ .sign:hover{
+  background-color: yellow;
+  color: #050505;
+ }
    
  a{
   text-decoration: none;
@@ -153,7 +156,7 @@ padding: 0.5em;
   padding-top: 0.1em  ;
 }
                        /* Footer */
- .containerfooter{
+ .container-footer{
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(44, 42, 42);
@@ -224,11 +227,9 @@ color: black;
   background-image: url(../images/search-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* opacity: 50%; */
   height: 200px;
   padding: 20px;
 }
-
   .container-search input{
   display: flex;
  justify-content: space-around;
@@ -721,7 +722,7 @@ animation: slideIn 6s ease-out;
   text-align: center;
   font-size: 18px;
 }
-.form-boxsizing .sign{
+.form-boxsizing .signn{
   position: relative;
   width: 80%;
   height: 50px;
@@ -731,7 +732,7 @@ animation: slideIn 6s ease-out;
 
  
 }
-.sign input{
+.signn input{
   width: 90%;
   height: 30px;
   background:  transparent;
@@ -747,7 +748,7 @@ transition: .5s;
 
 }
 
-.sign input::placeholder{
+.signn input::placeholder{
   font-weight: lighter;
   padding:2px 10px 2px 6px;
 
@@ -755,7 +756,7 @@ transition: .5s;
 }
 
 
-.sign a{
+.signn a{
   position: relative;
   width: 70%;
   height: 45px;
@@ -774,7 +775,7 @@ transition: .5s;
   color: black;
 }
 
-.sign a:before{
+.signn a:before{
   content: "";
   position: absolute;
   height: 300%;
@@ -791,10 +792,10 @@ margin: 0 auto;
 width: 70%;
 
 }
-.sign a:hover:before{
+.signn a:hover:before{
   top: 0;
 }
-.sign a{
+.signn a{
   color: black;
 }
 .sign-link p{

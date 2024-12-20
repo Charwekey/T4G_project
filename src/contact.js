@@ -62,38 +62,6 @@ function changeColor()
   active.style.color="white"
   active.style.backgroundColor="black";
    
-
-  let footer = document.querySelector(".footer")
-  footer.style.color ="cyan"
- 
-  let header = document.querySelector(".h4")
-  header.style.color="cyan"
-
-  let foot = document.querySelector(".foot")
-  foot.style.color="cyan"
-
-
-  let foote = document.querySelector(".foote");
-  foote.style.color = "cyan";
-
-  let foo = document.querySelector(".foo");
-  foo.style.color = "cyan";
-
-   let fo = document.querySelector(".fo");
-   fo.style.color = "cyan";
-
-    let fooe = document.querySelector(".fooe");
-    fooe.style.color = "cyan";
-
-    let fooo = document.querySelector(".fooo");
-    fooo.style.color = "cyan";
-
-    let foooo = document.querySelector(".foooo");
-    foooo.style.color = "cyan";
-
-    let Follow= document.querySelector(".Follow");
-    Follow.style.color = "cyan";
-
 }
 
 
@@ -110,6 +78,4 @@ contact.addEventListener('mouseleave', ()=> {
     nav.style.backgroundColor='';
     nav.style.color='';
 
-    // conatinerfooter.innerHTML = footerContent;
-    // containerfooter.style.color='';
 })

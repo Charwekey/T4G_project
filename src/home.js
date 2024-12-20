@@ -1,10 +1,15 @@
 // Array of image URLs for the slider
 const images = [
-  "../images/img1.jpg",
-  "../images/img3.jpg",
-  "../images/img5.jpg",
-  "../images/img2.jpg",
-  "../images/img4.jpg",
+  "./images/img1.jpg",
+  "./images/img8.jpg",
+  "./images/img7.jpg",
+  "./images/img4.jpg",
+  "./images/img6.jpg",
+  "./images/img5.jpg",
+  "./images/img2.jpg",
+  "./images/img3.jpg",
+  "./images/img9.jpg",
+  "./images/img10.jpg",
 ];
 
 // Get the image container
@@ -22,8 +27,13 @@ function updateImage() {
   containerNav.style.opacity = 0; // Start with opacity 0
   setTimeout(() => {
     containerNav.src = images[currentIndex]; // Update the image source
-    containerNav.style.opacity = 1; // Fade back to full opacity
-  }, 500); // Duration of the fade-out
+    containerNav.style.opacity = 1;
+    containerNav.style.transition = "opacity 1s ease-in-out";
+  }); 
+
+  let sign= document.querySelector(".sign")
+  sign.style.color="black"
+  sign.style.backgroundColor="yellow"
 }
 
 // Set an interval to change the image every 3 seconds
