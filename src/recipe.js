@@ -7,7 +7,7 @@ function viewRecipe(){
 
         bigger.style.backgroundColor="black"
         let recipes = document.querySelector(".recipes")
-        recipes.style.backgroundColor="black"
+        recipes.style.backdropFilter=""
         
 }
 button.addEventListener("click", viewRecipe);
