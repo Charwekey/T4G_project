@@ -50,7 +50,7 @@ function createRecipePopup(index, button) {
 
   // Styling the popup
   popup.style.position = "fixed";
-  popup.style.backgroundColor = "#ff9966";
+  popup.style.backgroundColor = "#ffddcc";
   popup.style.padding = "10px";
   popup.style.border = "1px solid #ccc";
   popup.style.borderRadius = "10px";

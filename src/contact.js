@@ -17,7 +17,7 @@ function changeColor()
 
   let input = document.querySelector(".input");
   input.style.borderBottomColor = " #ff9933";
-  input.style.color = "white";
+  
 
   let inpp = document.querySelector(".inpp");
   inpp.style.borderBottomColor = " #ff9933";

@@ -5,7 +5,7 @@
  .container-nav img{
        background-size: cover;
        background-repeat: no-repeat;
-       border: 5px solid rgb(235, 89, 120);
+       border: 5px solid #fa9a5b;
        width: 100%;
       height: 100vh;
       border-radius: 30px;
@@ -957,7 +957,7 @@ textarea:focus{
 .order button:hover,
 .order button:focus
 {
-  background-color:  #fa9a5b;
+ background: linear-gradient(to right, rgb(252, 74, 26), rgb(247, 183, 51));
   
   
 }
@@ -1016,7 +1016,7 @@ textarea:focus{
                                   height: 100%;
                                   width: 100%;
                                   position: relative;
-                                  background-color:  #f4e5dd;
+                                  background-color:  #f0ebe8;
                                    left: 0;
                                      top: 0;
                                      margin-bottom:-25px;
