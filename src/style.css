@@ -862,6 +862,7 @@ textarea:focus {
   font-size: 25px;
   text-align: center;
   margin-top: 30px;
+
 }
 
 .des {
@@ -894,6 +895,7 @@ textarea:focus {
   color: #993300;
   font-size: 50px;
   animation: bounce 5s infinite;
+  font-family: "Dancing Script", serif;
 }
 @keyframes bounce {
   0%,
